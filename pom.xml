@@ -31,6 +31,7 @@
     <fmt-maven-plugin.version>2.19</fmt-maven-plugin.version>
     <maven-assembly-plugin.version>3.4.2</maven-assembly-plugin.version>
     <maven-assembly-plugin.mainClass>org.xjtu.maven-rbamb-archetype</maven-assembly-plugin.mainClass>
+    <maven-resources-plugin.version>3.0.2</maven-resources-plugin.version>
   </properties>
 
   <build>
@@ -97,6 +98,14 @@
           <descriptorRefs>
             <descriptorRef>jar-with-dependencies</descriptorRef>
           </descriptorRefs>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>3.0.2</version>
+        <configuration>
+          <addDefaultExcludes>false</addDefaultExcludes>
         </configuration>
       </plugin>
     </plugins>

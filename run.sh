@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
-mainClass="org.rbamb.maven-rbamb-archetype"
-testClass="org.rbamb.maven-rbamb-archetype"
+mainClass="org.rbamb.maven-rbamb-archetype.Main"
+testClass="org.rbamb.maven-rbamb-archetype.MainTest"
 
 exec_fmt() {
   mvn com.spotify.fmt:fmt-maven-plugin:format
